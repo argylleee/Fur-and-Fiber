@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+:root {
+    --primary-color: #ED4C67;
+    --grey-color: #b3b3b3;
+    --light-color: #eaeaea;
+    --white-color: #ffffff;
+    --dark-color: #000000;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+.about-us {
+    padding: 80px 0px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 20px;
+}
+
+.about-us h2 {
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: var(--grey-color);
+}
+
+.about-us h3 {
+    font-size: 22px;
+    color: var(--dark-color);
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #888;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.about-us img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.social-links {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 10px;
+    color: var(--white-color);
+    background-color: var(--dark-color);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s ease;
+}
+
+.social-links a:hover {
+    transform: translate(-3px);
+}
+
+#backButton {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    background-color: var(--dark-color);
+    transition: all 0.4 ease;
+}
+
+#backButton:hover {
+    transform: translate(-3px);
+}
+
+#goBack {
+    font-family: 'Nunito', 'sans serif';
+    text-decoration: none;
+    color: var(--white-color);
+    display: inline-block;
+    text-align: center;
+    padding: 10px 20px;
+    margin-left: 250px;
+    margin-bottom: 100px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 25px;
+    background-color: var(--primary-color);
+    transition: all 0.4 ease;
+}
+
+#goBack:hover {
+    transform: translate(-3px);
+}
+
+button#goBack {
+    margin-top: 0;
+    top: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .flex {
+        max-width: 100%;
+    }
+
+    .about-us h2 {
+        font-size: 31px;
+    }
+
+    .about-us p {
+        font-size: 16px;
+    }
+
+    .social-links a {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 14px;
+        margin-right: 5px;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 8px 16px;
+        margin-bottom: 30px;
+    }
+}

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Shipping Policy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="icon" type="image/x-icon" href="assets/models/logo.png">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Nunito, sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.8;
+            color: var(--dark-color);
+            background-color: var(--white-color);
+            background-color: whitesmoke;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            text-align: justify;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .delivery-info,
+        .shipping-policy {
+            margin-top: 20px;
+        }
+
+        .delivery-info p,
+        .shipping-policy p {
+            margin-bottom: 10px;
+        }
+
+        .delivery-info label,
+        .shipping-policy ul {
+            font-weight: bold;
+            display: block;
+        }
+
+
+        .delivery-info input[type="text"],
+        .delivery-info textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .delivery-info input[type="email"],
+        .delivery-info textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .shipping-policy ul {
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+
+        input[type=submit] {
+            color: white;
+            background-color: black;
+            display: inline-flex;
+            font-size: 14px;
+            font-weight: 700;
+            border-radius: 60px;
+            padding: 0 32px;
+            line-height: 42px;
+            transition: background-color .3s, color .3s;
+            width: 600px;
+            position: relative;
+            ;
+        }
+
+        input[type=submit]:hover {
+            background-color: transparent;
+            color: var(--dark-color);
+            border-color: var(--dark-color);
+        }
+
+        .copyright {
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1280px;
+            padding: 0 15px;
+            margin: 0 auto;
+            background-color: #f8f8f8;
+            box-shadow: none;
+        }
+    </style>
+    </style>
+</head>
+
+<body>
+    <button onclick="history.go(-1)" id="backButton">Go Back</button>
+
+    <div style="max-width: 600px; margin: 0 auto">
+        <h1>Delivery Information</h1>
+        <div class="delivery-info">
+            <p>
+            <h3><label for="name">Name:</label></h3>
+            <input type="text" id="name" name="name" placeholder="Juan dela Cruz" required />
+            </p>
+            <p>
+            <h3><label for="address">Street Name:</label></h3>
+            <input type="text" name="address" placeholder="123 B. Apolinario Street" required></textarea>
+            </p>
+            <p>
+            <h3><label for="city">City:</label></h3>
+            <input type="text" id="city" name="city" placeholder="Indang" required />
+            </p>
+            <p>
+            <h3><label for="state">Province:</label></h3>
+            <input type="text" id="state" name="state" placeholder="Cavite" required />
+            </p>
+            <p>
+            <h3><label for="zip">ZIP Code:</label></h3>
+            <input type="text" id="zip" name="zip" placeholder="4122" required />
+            </p>
+            <p>
+            <h3><label for="phone">Phone:</label></h3>
+            <input type="text" id="phone" name="phone" placeholder="09123456789" required />
+            </p>
+            <p>
+            <h3><label for="email">Email:</label></h3>
+            <input type="email" id="email" name="email" placeholder="juandelacruz@gmail.com" required />
+            </p>
+            <p>
+            <h3><label for="notes">Notes:</label></h3>
+            <textarea id="notes" name="notes"></textarea>
+            </p>
+            <p>
+            <div class="submissionbutton"><input name="submit" type="submit" value="Submit"></div>
+            </p>
+        </div>
+        <br>
+        <hr>
+        <h1>Shipping Policy</h1>
+        <div class="shipping-policy">
+            <p>
+                We offer shipping within the Philippines. Please review our shipping
+                policy below:
+            </p>
+            <h3>Shipping Methods</h3>
+            <p>We provide the following shipping methods:</p>
+            <ul>
+                <li>Standard Shipping: Delivery within 5-7 business days</li>
+                <li>Express Shipping: Delivery within 2-3 business days</li>
+                <li>Overnight Shipping: Next-day delivery</li>
+            </ul>
+            <h3>Shipping Costs</h3>
+            <p>
+                Shipping costs are calculated based on the total weight of the
+                products in your order and your location. The shipping cost will be
+                displayed during the checkout process before you complete your
+                purchase.
+            </p>
+            <h3>Order Processing Time</h3>
+            <p>
+                Please allow 1-2 business days for order processing before the
+                shipment is dispatched.
+            </p>
+            <h3>Order Tracking</h3>
+            <p>
+                Once your order has been shipped, you will receive a confirmation
+                email with a tracking number. You can use this tracking number to
+                track the status of your shipment on our website.
+            </p>
+            <h3>International Shipping</h3>
+            <p>
+                Unfortunately, we do not offer international shipping.
+                Please check our newsletter for more updates.
+            </p>
+            <h3>Shipping Restrictions</h3>
+            <p>
+                Some products may have specific shipping restrictions due to legal or
+                logistical limitations. Such restrictions will be mentioned on the
+                product page if applicable.
+            </p>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <p>© All Rights Reserved 2023 | <a href="#">Group 4 Developers</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+
+</html>

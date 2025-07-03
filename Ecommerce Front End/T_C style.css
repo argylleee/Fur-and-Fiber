@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+:root {
+    --primary-color: #ED4C67;
+    --grey-color: #b3b3b3;
+    --light-color: #eaeaea;
+    --white-color: #ffffff;
+    --dark-color: #000000;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url(assets/models/bg.jpg);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.terms-box {
+    max-width: 460px;
+    background-color: #F8F7F2;
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+    padding: 70px 70px;
+}
+.terms-text {
+    padding: 0 20 px;
+    padding-right: 20px;
+    height: 400px;
+    overflow-y: auto;
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+}
+.terms-text::-webkit-scrollbar {
+    width: 2px;
+    background-color: var(--dark-color);
+}
+.terms-text::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+}
+.terms-text h2 {
+    text-transform: uppercase;
+}
+.terms-box h4 {
+    font-size: 13px;
+    text-align: center;
+    padding: 0 40px;
+    color: black;
+}
+.terms-box h4 span {
+    color: #888;
+}
+.buttons {
+    display: flex;
+    padding: 0 20px;
+    justify-content: space-between; 
+}
+.btn {
+    height: 50px;
+    width: calc(50% - 6px);
+    border: 0;
+    border-radius: 6px;
+    font-size: 19px;
+    font-weight: 500;
+    color: #fff;
+    transition: .3s linear;
+    cursor: pointer;
+}
+.red-btn {
+    background-color: var(--primary-color);
+}
+.gray-btn {
+    background-color: var(--grey-color);
+}
+.btn:hover {
+    transform: translate(-3px);
+}
+
+
